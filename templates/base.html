@@ -1,10 +1,58 @@
-<!DOCTYPE html>
+{% load static %}
+
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>D_OLX</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>D_OLX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
     <body>
-        <h2>Testing to see if this works!</h2>
+        <nav class="indigo lighten-2">
+            <div class="container nav-wrapper">
+                <a href="/" class="brand-logo">D OLX</a>
+                <ul id="nav-mobile" class="right">
+                    <li><a href="/">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <h2 style="text-align: center">Look something up</h2>
+
+            <div class="row">
+                <div class="col s4">
+                    <div class="center">
+                        <i class="large material-icons" style="color: #EE5E73">flash_on</i>
+                        <p>Fast OLX Scraper</p>
+                        <p class="light center">Scrape away</p>
+                    </div>
+                </div>
+
+                <div class="col s4">
+                    <div class="center">
+                        <i class="large material-icons" style="color: #EE5E73">flash_on</i>
+                        <p>Fast OLX Scraper</p>
+                        <p class="light center">Scrape away</p>
+                    </div>
+                </div>
+
+                <div class="col s4">
+                    <div class="center">
+                        <i class="large material-icons" style="color: #EE5E73">flash_on</i>
+                        <p>Fast OLX Scraper</p>
+                        <p class="light center">Scrape away</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {% block content %}
+
+    {% endblock content %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     </body>
 </html>
